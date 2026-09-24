@@ -1,0 +1,176 @@
+[
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 1,
+    "chunk_id": 1,
+    "chunk_text": "SUMMER TRAINING REPORT (ICT-393) \n\nSubmitted in partial fulfillment of the requirements for the award of the degree of \nBACHELOR OF TECHNOLOGY \nIN \nCOMPUTER SCIENCE AND ENGINEERING \n\nUNIVERSITY SCHOOL OF INFORMATION \nAND \nCOMMUNICATION TECHNOLOGY \n\nGURU GOBIND SINGH INDRAPRASTHA \nUNIVERSITY, NEW DELHI-110078 \n\n(2023-2027) \n\nSUBMITTED BY: \nNAME: MANISH ROUNIYAR \nENROLLMENT NO.: 40316403223 \nBRANCH: B.TECH CSE 5th Sem"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 2,
+    "chunk_id": 2,
+    "chunk_text": "2 \n\nDECLARATION \n\nI, Manish Rouniyar (40316403223), a student of Bachelor of Technology in Computer Science \nand Engineering, hereby declare that the internship report titled “Frontend Developer \nInternship at Eknal Technologies Pvt. Ltd.” is an original work completed by me. \n\nThis report is a reflection of the tasks and projects I undertook during my summer internship \nfrom 17th April 2025 to 18th July 2025 as a Frontend Developer Intern. The information \npresented here is true to the best of my knowledge and has not been copied or submitted for \nany other purpose. \n\nI have adhered to academic and ethical standards throughout the preparation of this report. \nAny assistance, guidance, and data obtained from external sources have been duly \nacknowledged. \n\n LOCATION: Andhra Pradesh, India \n\nNAME: MANISH ROUNIYAR \nENROLLMENT NO.: 40316403223 \nBRANCH: B.TECH CSE 5th Sem"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 2,
+    "chunk_id": 3,
+    "chunk_text": "NAME: MANISH ROUNIYAR \nENROLLMENT NO.: 40316403223 \nBRANCH: B.TECH CSE 5th Sem"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 3,
+    "chunk_id": 4,
+    "chunk_text": "3 \n\nAcknowledgment \n\nI would like to express my heartfelt gratitude to Eknal Technologies Pvt. Ltd. and Mr. Ramesh \nLanke (mentor & Co-Founder) for giving me the opportunity to work under their guidance and \nhelping me gain an immensely enriching professional experience. I sincerely thank my mentor \nand teammates for giving me valuable inputs and ideas right from the selection of the topic for \nthe project till its successful completion. \n\nI also extend my heartfelt thanks to my professors and internship coordinators at USICT for \ntheir constant encouragement and for equipping me with the foundational knowledge and skills \nneeded to succeed in this internship. \n\nThe successful completion of our project would not have been possible without the dedicated \nsupport from all my mentors, family, and friends."
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 3,
+    "chunk_id": 5,
+    "chunk_text": "and friends."
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 4,
+    "chunk_id": 6,
+    "chunk_text": "4 \n\nTable of Content \n\nINTERNSHIP CERTIFICATE ........................................................................................................................ 5 \n1. Introduction and Company Profile ............................................................................................................... 6 \n1.1 Overview of the Internship ...................................................................................................................... 6 \n1.2 About Traycer AI, Inc .............................................................................................................................. 6 \n1.3 Key Products and Services ...................................................................................................................... 6 \n1.4 Company Details ..................................................................................................................................... 6 \n2. Project Focus and Responsibilities ......................."
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 4,
+    "chunk_id": 7,
+    "chunk_text": "s ..................................................................................................................................... 6 \n2. Project Focus and Responsibilities ................................................................................................................ 7 \n2.1 Feature Overview: Memories with RAG Integration ............................................................................... 7 \n2.2 UI Objectives ........................................................................................................................................... 7 \n2.3 Scope and Milestones .............................................................................................................................. 7 \n2.4 Contributions to Front-End Development ................................................................................................ 7 \n2.5 Tools and Frameworks ........................................................................................"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 4,
+    "chunk_id": 8,
+    "chunk_text": "................................................................................... 7 \n2.5 Tools and Frameworks ............................................................................................................................. 7 \n3. Technical Approach ....................................................................................................................................... 8 \n3.1 Overview of RAG (Retrieval-Augmented Generation) System .............................................................. 8 \n3.2 Development Process ............................................................................................................................... 9 \n3.3 Challenges and Solutions ......................................................................................................................... 9 \n3.4 Implementation Details .......................................................................................................................... 10 \n3.5 Flowc"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 4,
+    "chunk_id": 9,
+    "chunk_text": "................................. 9 \n3.4 Implementation Details .......................................................................................................................... 10 \n3.5 Flowchart ............................................................................................................................................... 10 \n4. Achievements and Learning Outcomes ...................................................................................................... 11 \n4.1 Front-End Accomplishments ................................................................................................................. 11 \n4.2 Technical Skills Gained ......................................................................................................................... 11 \n4.3 Professional and Personal Growth ......................................................................................................... 11 \n5. Conclusion ......................................."
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 4,
+    "chunk_id": 10,
+    "chunk_text": "4.3 Professional and Personal Growth ......................................................................................................... 11 \n5. Conclusion ..................................................................................................................................................... 12 \n5.1 Overview of Experience ........................................................................................................................ 12 \n5.2 Insights and Takeaways ......................................................................................................................... 12 \n5.3 Future Potential for the Memories Feature ............................................................................................ 12"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 5,
+    "chunk_id": 11,
+    "chunk_text": "5 \n\nINTERNSHIP CERTIFICATE"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 6,
+    "chunk_id": 12,
+    "chunk_text": "6 \n\n1. Introduction and Company Profile \n\n1.1 Overview of the Internship \n\nDuring my summer internship at Traycer AI, Inc., I focused on front-end development for the Memories \nfeature, utilizing Retrieval-Augmented Generation (RAG) technology to enhance the user experience in \nTraycer’s AI-powered code analysis tool. Working closely with the engineering team, I developed React \ncomponents to seamlessly display memory-based insights, creating an intuitive and responsive interface. My \nwork involved designing interactive UI elements that enabled developers to easily access and manage \ncontextual suggestions within their coding environment. This experience strengthened my skills in crafting \nuser-friendly interfaces for AI-driven tools, focusing on delivering a smooth, productive experience for \nend-users. \n\n1.2 About Traycer AI, Inc. \n\nTraycer AI, Inc. is an innovative software company dedicated to enhancing code quality and developer \nproductivity through intelligent automation. Its fl"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 6,
+    "chunk_id": 13,
+    "chunk_text": "for \nend-users. \n\n1.2 About Traycer AI, Inc. \n\nTraycer AI, Inc. is an innovative software company dedicated to enhancing code quality and developer \nproductivity through intelligent automation. Its flagship product is an advanced code analysis tool that \nintegrates directly into Visual Studio Code, providing real-time, context-aware feedback to developers. This \nintegration allows for seamless identification and resolution of potential issues, streamlining the development \nprocess. \n\n1.3 Key Products and Services \n\nTraycer's primary offering is its AI-powered code analysis tool, which supports multiple programming \nlanguages, including TypeScript, JavaScript, Python, and Golang. Key features include automatic tracking of \ncode changes, actionable feedback, single-click fixes, and context-aware conversations with AI for instant \nclarifications and code improvements. These features are designed to keep developers in the flow, analyzing \ncode changes in the background and delivering clear"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 6,
+    "chunk_id": 14,
+    "chunk_text": "ware conversations with AI for instant \nclarifications and code improvements. These features are designed to keep developers in the flow, analyzing \ncode changes in the background and delivering clear and actionable insights without interrupting their \nworkflow. \n\n1.4 Company Details \n\nWebsite: https://traycer.ai \nHeadquarters: 376 La Casa Via, Walnut Creek, California 94598, USA"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 7,
+    "chunk_id": 15,
+    "chunk_text": "7 \n\n2. Project Focus and Responsibilities \n\n2.1 Feature Overview: Memories with RAG Integration \n\nThe Memories project involved designing and refining a front-end interface within Traycer AI, using \nRetrieval-Augmented Generation (RAG) technology. This feature was intended to enhance developer \nproductivity by integrating contextual insights based on prior interactions, allowing developers to access \nrelevant suggestions directly within the UI for more efficient coding. \n\n2.2 UI Objectives \n\nThe primary objectives for the UI were to create a React-based, intuitive interface for memory retrieval, \nfacilitating easy access to contextual information. The project emphasized integrating RAG seamlessly to \nensure the feature delivered relevant insights while maintaining a responsive and efficient user experience. \n\n2.3 Scope and Milestones \n\nThe project’s scope encompassed developing front-end components for memory display, designing a \nuser-friendly layout, and optimizing the UI for speed a"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 7,
+    "chunk_id": 16,
+    "chunk_text": "t user experience. \n\n2.3 Scope and Milestones \n\nThe project’s scope encompassed developing front-end components for memory display, designing a \nuser-friendly layout, and optimizing the UI for speed and reliability. Key milestones included building the \ninitial UI layout, integrating RAG-based retrieval, and conducting usability testing to achieve a smooth, \ncohesive interface within the internship timeline. \n\n2.4 Contributions to Front-End Development \n\nI contributed by implementing React components that display memory retrieval results within the Traycer UI, \nfocusing on enhancing the flow of contextual insights. I optimized the front-end to interact efficiently with the \nRAG system, collaborated with the team on troubleshooting, and refined the overall user experience. My \nresponsibilities also included validation testing and documenting UI elements to support future updates. \n\n2.5 Tools and Frameworks \n\nThe project utilized React for component development, with RAG frameworks for r"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 7,
+    "chunk_id": 17,
+    "chunk_text": "ies also included validation testing and documenting UI elements to support future updates. \n\n2.5 Tools and Frameworks \n\nThe project utilized React for component development, with RAG frameworks for retrieving memory data, \nGitHub for version control, and debugging tools within the IDE. This toolkit enabled effective front-end \ndevelopment, allowing for testing and optimization of UI performance throughout the project’s phases."
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 8,
+    "chunk_id": 18,
+    "chunk_text": "8 \n\n3. Technical Approach \n\n3.1 Overview of RAG (Retrieval-Augmented Generation) System \nThe Memories feature leverages a Retrieval-Augmented Generation (RAG) system to provide contextually \nrelevant suggestions within the front-end interface. RAG combines retrieval and generation techniques, \npulling relevant information from prior interactions or documentation and presenting it in a way that enhances \nthe current coding context. This setup enables the front-end to display meaningful, context-aware insights \ndirectly within the IDE, helping developers quickly access relevant suggestions and improve their workflow \nwithout switching contexts. The RAG-driven UI elements make the user experience seamless, displaying \nsuggestions in real-time and in alignment with the user’s current development focus."
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 8,
+    "chunk_id": 19,
+    "chunk_text": "nt focus."
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 9,
+    "chunk_id": 20,
+    "chunk_text": "9 \n\n3.2 Development Process \nThe development process involved key stages focused on front-end integration and performance optimization: \ninitial UI design, embedding the retrieval mechanisms, testing for response accuracy, and optimizing for \nspeed. In the interface, Pinecone was integrated as the vector database to efficiently store and retrieve \nembeddings, enabling fast access to relevant memories. OpenAI’s large embedding model generated \nhigh-context embeddings that seamlessly aligned with the front-end display, ensuring suggestions were highly \nrelevant. Additionally, Supabase served as the data storage layer, providing a reliable backend for managing \nretrieval operations and supporting a smooth user experience within the IDE. \n\n3.3 Challenges and Solutions \nEnsuring a responsive UI with real-time data retrieval was a primary challenge, requiring efficient loading \nindicators and asynchronous data handling to avoid delays. Managing large embeddings from OpenAI while \nmaintaining"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 9,
+    "chunk_id": 21,
+    "chunk_text": "with real-time data retrieval was a primary challenge, requiring efficient loading \nindicators and asynchronous data handling to avoid delays. Managing large embeddings from OpenAI while \nmaintaining quick access in Pinecone also tested front-end performance. Displaying context-relevant \nsuggestions without UI lag involved careful optimization of component rendering. These adjustments were \ncrucial to delivering a seamless and intuitive user experience within the IDE."
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 10,
+    "chunk_id": 22,
+    "chunk_text": "10 \n\n3.4 Implementation Details \nThe RAG system was configured to retrieve the most relevant matches, with Pinecone storing and searching \nvectorized representations of past interactions to support quick access within the UI. Supabase served as the \nprimary data store, managing and tracking interactions to maintain memory consistency. Leveraging \nOpenAI’s large embedding model, the system generated embeddings that captured the semantic context of \npast interactions, ensuring that the suggestions displayed in the UI were both meaningful and specific to the \ndeveloper’s current coding context. This configuration provided developers with targeted, context-aware \ninsights seamlessly integrated into their IDE. \n\n3.5 Flowchart"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 11,
+    "chunk_id": 23,
+    "chunk_text": "11 \n\n4. Achievements and Learning Outcomes \n\n4.1 Front-End Accomplishments \nDuring my internship, I played a key role in developing the front-end for the Memories feature, focusing on \nseamless integration of RAG-based suggestions within the UI. This involved configuring the retrieval system \nfor efficient data display and optimizing React components to ensure relevant suggestions appeared quickly \nwithout lag. I also fine-tuned how embeddings were presented to enhance the accuracy and quality of \ninsights, improving the overall user experience and boosting developer productivity within Traycer AI. \n4.2 Technical Skills Gained \nThis experience allowed me to deepen my front-end skills, especially in React and state management for \nreal-time data retrieval. I gained practical experience with Pinecone for efficient data handling, OpenAI’s \nembeddings for delivering contextual insights, and Supabase for managing interactions. Additionally, I \nlearned best practices for implementing AI-driv"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 11,
+    "chunk_id": 24,
+    "chunk_text": "Pinecone for efficient data handling, OpenAI’s \nembeddings for delivering contextual insights, and Supabase for managing interactions. Additionally, I \nlearned best practices for implementing AI-driven features in user interfaces within IDEs, developing \ncollaborative problem-solving skills by working closely with other developers to troubleshoot and refine the \nuser experience. \n4.3 Professional and Personal Growth \nProfessionally, I gained confidence in tackling complex UI challenges and learned to approach project tasks \nwith a proactive mindset. This experience also strengthened my collaboration skills, helping me communicate \ntechnical details effectively and integrate feedback for continuous improvement. Personally, this internship \nreinforced my enthusiasm for AI-driven front-end development and my commitment to advancing my skills \nin creating intuitive, high-performance user interfaces."
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 11,
+    "chunk_id": 25,
+    "chunk_text": "evelopment and my commitment to advancing my skills \nin creating intuitive, high-performance user interfaces."
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 12,
+    "chunk_id": 26,
+    "chunk_text": "12 \n\n5. Conclusion \n\n5.1 Overview of Experience \nMy summer internship at Traycer AI, Inc. was a deeply rewarding opportunity that enabled me to work on the \nMemories feature, an impactful addition designed to improve developer productivity. Engaging with \nRetrieval-Augmented Generation (RAG) technology, I was able to put my skills into action, tackling technical \nchallenges, and gaining hands-on experience with AI-driven front-end development. This project underscored \nthe importance of creating a seamless user experience, blending advanced functionality with practical \nusability. \n\n5.2 Insights and Takeaways \nThroughout this internship, I gained valuable insights into applying AI technologies within user interfaces, \nemphasizing the balance between technical efficiency and a user-friendly experience. The collaborative \nenvironment at Traycer AI fostered both creativity and personal growth, with team support that encouraged \ncontinuous learning and innovation. This experience enhanced"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 12,
+    "chunk_id": 27,
+    "chunk_text": "experience. The collaborative \nenvironment at Traycer AI fostered both creativity and personal growth, with team support that encouraged \ncontinuous learning and innovation. This experience enhanced my understanding of the role AI can play in \nstreamlining coding workflows, as well as the importance of clear, efficient UI design. \n\n5.3 Future Potential for the Memories Feature \nLooking forward, there are numerous possibilities for expanding the Memories feature to support an even \nbroader range of developer needs. Potential improvements could include advanced filtering options for \nretrieving context-specific memories, further refinement of the retrieval algorithms, and increased adaptability \nfor use across multiple IDEs. These future enhancements would elevate the feature’s utility, supporting \ndevelopers more effectively as Traycer AI continues to evolve its offerin"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 12,
+    "chunk_id": 28,
+    "chunk_text": "porting \ndevelopers more effectively as Traycer AI continues to evolve its offerin"
+  },
+  {
+    "document_name": "Anurag Internship report (1).pdf",
+    "page_number": 13,
+    "chunk_id": 29,
+    "chunk_text": "13"
+  }
+]

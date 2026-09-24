@@ -1,0 +1,1069 @@
+{
+  "summary": {
+    "method": "Hybrid Retrieval + Cross-Encoder Reranking",
+    "top_k": 5,
+    "candidate_k": 10,
+    "rrf_constant": 60,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "number_of_questions": 20,
+    "precision_at_5": 0.29000000000000015,
+    "recall_at_5": 0.9166666666666666,
+    "mrr": 0.9625,
+    "ndcg_at_5": 0.8983452320789251
+  },
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question": "What is elasticity in cloud computing?",
+      "relevant_chunks": [
+        2
+      ],
+      "hybrid_candidates": [
+        2,
+        5,
+        3,
+        0,
+        17,
+        23,
+        11,
+        21,
+        14,
+        18
+      ],
+      "reranked_chunks": [
+        2,
+        11,
+        0,
+        5,
+        14
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 2,
+          "score": 5.809945106506348
+        },
+        {
+          "chunk_id": 11,
+          "score": -4.81973934173584
+        },
+        {
+          "chunk_id": 0,
+          "score": -5.369271278381348
+        },
+        {
+          "chunk_id": 5,
+          "score": -5.614583969116211
+        },
+        {
+          "chunk_id": 14,
+          "score": -5.725828170776367
+        }
+      ],
+      "precision_at_5": 0.2,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question_id": "Q02",
+      "question": "What are the three main cloud service models described in the document?",
+      "relevant_chunks": [
+        2,
+        3
+      ],
+      "hybrid_candidates": [
+        3,
+        21,
+        2,
+        0,
+        14,
+        17,
+        1,
+        5,
+        7,
+        10
+      ],
+      "reranked_chunks": [
+        3,
+        2,
+        5,
+        21,
+        0
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 3,
+          "score": 3.0708494186401367
+        },
+        {
+          "chunk_id": 2,
+          "score": 1.2135237455368042
+        },
+        {
+          "chunk_id": 5,
+          "score": 0.21323275566101074
+        },
+        {
+          "chunk_id": 21,
+          "score": -0.6811626553535461
+        },
+        {
+          "chunk_id": 0,
+          "score": -0.7263107299804688
+        }
+      ],
+      "precision_at_5": 0.4,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question_id": "Q03",
+      "question": "How do containers differ from virtual machines?",
+      "relevant_chunks": [
+        3,
+        4
+      ],
+      "hybrid_candidates": [
+        4,
+        3,
+        18,
+        19,
+        2,
+        17,
+        0,
+        5,
+        23,
+        14
+      ],
+      "reranked_chunks": [
+        4,
+        3,
+        18,
+        19,
+        17
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 4,
+          "score": 8.59420394897461
+        },
+        {
+          "chunk_id": 3,
+          "score": 1.1279349327087402
+        },
+        {
+          "chunk_id": 18,
+          "score": -1.974294662475586
+        },
+        {
+          "chunk_id": 19,
+          "score": -3.619356155395508
+        },
+        {
+          "chunk_id": 17,
+          "score": -5.656052589416504
+        }
+      ],
+      "precision_at_5": 0.4,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question_id": "Q04",
+      "question": "What is Function-as-a-Service (FaaS)?",
+      "relevant_chunks": [
+        5
+      ],
+      "hybrid_candidates": [
+        5,
+        9,
+        0,
+        2,
+        21,
+        3,
+        20,
+        14,
+        7,
+        12
+      ],
+      "reranked_chunks": [
+        5,
+        0,
+        3,
+        20,
+        2
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 5,
+          "score": 7.257436275482178
+        },
+        {
+          "chunk_id": 0,
+          "score": 2.4965555667877197
+        },
+        {
+          "chunk_id": 3,
+          "score": -4.212498664855957
+        },
+        {
+          "chunk_id": 20,
+          "score": -6.249996185302734
+        },
+        {
+          "chunk_id": 2,
+          "score": -7.827666282653809
+        }
+      ],
+      "precision_at_5": 0.2,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question_id": "Q05",
+      "question": "Why is persistent application state usually stored outside a serverless function?",
+      "relevant_chunks": [
+        5,
+        6
+      ],
+      "hybrid_candidates": [
+        6,
+        5,
+        19,
+        8,
+        22,
+        18,
+        23,
+        11,
+        7,
+        21
+      ],
+      "reranked_chunks": [
+        6,
+        5,
+        22,
+        8,
+        19
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 6,
+          "score": 4.7995285987854
+        },
+        {
+          "chunk_id": 5,
+          "score": 4.424074172973633
+        },
+        {
+          "chunk_id": 22,
+          "score": 3.165501356124878
+        },
+        {
+          "chunk_id": 8,
+          "score": 2.3289806842803955
+        },
+        {
+          "chunk_id": 19,
+          "score": 2.292607545852661
+        }
+      ],
+      "precision_at_5": 0.4,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question_id": "Q06",
+      "question": "What is a cold start in serverless computing?",
+      "relevant_chunks": [
+        6
+      ],
+      "hybrid_candidates": [
+        6,
+        7,
+        5,
+        11,
+        8,
+        14,
+        16,
+        17,
+        2,
+        18
+      ],
+      "reranked_chunks": [
+        6,
+        7,
+        16,
+        5,
+        8
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 6,
+          "score": 6.6302666664123535
+        },
+        {
+          "chunk_id": 7,
+          "score": 2.6514837741851807
+        },
+        {
+          "chunk_id": 16,
+          "score": 2.023106575012207
+        },
+        {
+          "chunk_id": 5,
+          "score": -1.3111169338226318
+        },
+        {
+          "chunk_id": 8,
+          "score": -3.8784871101379395
+        }
+      ],
+      "precision_at_5": 0.2,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question_id": "Q07",
+      "question": "What happens when a user submits a form in the described serverless contact application?",
+      "relevant_chunks": [
+        8,
+        9
+      ],
+      "hybrid_candidates": [
+        8,
+        7,
+        6,
+        21,
+        5,
+        11,
+        14,
+        19,
+        17,
+        3
+      ],
+      "reranked_chunks": [
+        8,
+        7,
+        6,
+        21,
+        5
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 8,
+          "score": 4.956778049468994
+        },
+        {
+          "chunk_id": 7,
+          "score": 1.7328884601593018
+        },
+        {
+          "chunk_id": 6,
+          "score": -1.939359188079834
+        },
+        {
+          "chunk_id": 21,
+          "score": -2.2728052139282227
+        },
+        {
+          "chunk_id": 5,
+          "score": -3.642886161804199
+        }
+      ],
+      "precision_at_5": 0.2,
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.6131471927654584
+    },
+    {
+      "question_id": "Q08",
+      "question": "Why is object storage suitable for hosting static frontend assets?",
+      "relevant_chunks": [
+        9
+      ],
+      "hybrid_candidates": [
+        9,
+        22,
+        21,
+        12,
+        2,
+        10,
+        8,
+        7,
+        6,
+        4
+      ],
+      "reranked_chunks": [
+        9,
+        22,
+        21,
+        8,
+        12
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 9,
+          "score": 6.833134174346924
+        },
+        {
+          "chunk_id": 22,
+          "score": 3.159281015396118
+        },
+        {
+          "chunk_id": 21,
+          "score": 0.5234459638595581
+        },
+        {
+          "chunk_id": 8,
+          "score": -2.094313144683838
+        },
+        {
+          "chunk_id": 12,
+          "score": -6.518489837646484
+        }
+      ],
+      "precision_at_5": 0.2,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question_id": "Q09",
+      "question": "What functions can an API gateway perform in the described architecture?",
+      "relevant_chunks": [
+        9,
+        10
+      ],
+      "hybrid_candidates": [
+        9,
+        8,
+        7,
+        21,
+        14,
+        22,
+        10,
+        20,
+        6,
+        11
+      ],
+      "reranked_chunks": [
+        21,
+        8,
+        7,
+        9,
+        22
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 21,
+          "score": 5.614706993103027
+        },
+        {
+          "chunk_id": 8,
+          "score": 5.225461006164551
+        },
+        {
+          "chunk_id": 7,
+          "score": 3.7967708110809326
+        },
+        {
+          "chunk_id": 9,
+          "score": 3.6235599517822266
+        },
+        {
+          "chunk_id": 22,
+          "score": 0.768699586391449
+        }
+      ],
+      "precision_at_5": 0.2,
+      "recall_at_5": 0.5,
+      "mrr": 0.25,
+      "ndcg_at_5": 0.2640681225725909
+    },
+    {
+      "question_id": "Q10",
+      "question": "When might a relational database be preferred over a NoSQL database?",
+      "relevant_chunks": [
+        10
+      ],
+      "hybrid_candidates": [
+        10,
+        23,
+        7,
+        9,
+        18,
+        22,
+        21,
+        6,
+        15,
+        14
+      ],
+      "reranked_chunks": [
+        10,
+        23,
+        15,
+        18,
+        7
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 10,
+          "score": 1.4916307926177979
+        },
+        {
+          "chunk_id": 23,
+          "score": -5.158261299133301
+        },
+        {
+          "chunk_id": 15,
+          "score": -10.722461700439453
+        },
+        {
+          "chunk_id": 18,
+          "score": -10.937058448791504
+        },
+        {
+          "chunk_id": 7,
+          "score": -11.101522445678711
+        }
+      ],
+      "precision_at_5": 0.2,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question_id": "Q11",
+      "question": "How does a message queue help separate producers and consumers?",
+      "relevant_chunks": [
+        11,
+        12
+      ],
+      "hybrid_candidates": [
+        11,
+        16,
+        12,
+        21,
+        20,
+        5,
+        15,
+        7,
+        8,
+        3
+      ],
+      "reranked_chunks": [
+        11,
+        12,
+        15,
+        5,
+        16
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 11,
+          "score": 6.4924821853637695
+        },
+        {
+          "chunk_id": 12,
+          "score": 1.011473536491394
+        },
+        {
+          "chunk_id": 15,
+          "score": -10.266680717468262
+        },
+        {
+          "chunk_id": 5,
+          "score": -10.31486988067627
+        },
+        {
+          "chunk_id": 16,
+          "score": -10.414287567138672
+        }
+      ],
+      "precision_at_5": 0.4,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question_id": "Q12",
+      "question": "How can an object upload trigger document processing?",
+      "relevant_chunks": [
+        12
+      ],
+      "hybrid_candidates": [
+        21,
+        12,
+        11,
+        0,
+        13,
+        1,
+        5,
+        7,
+        6,
+        20
+      ],
+      "reranked_chunks": [
+        12,
+        21,
+        11,
+        6,
+        0
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 12,
+          "score": 4.577027320861816
+        },
+        {
+          "chunk_id": 21,
+          "score": 2.1414966583251953
+        },
+        {
+          "chunk_id": 11,
+          "score": -7.713945388793945
+        },
+        {
+          "chunk_id": 6,
+          "score": -8.236014366149902
+        },
+        {
+          "chunk_id": 0,
+          "score": -8.369504928588867
+        }
+      ],
+      "precision_at_5": 0.2,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question_id": "Q13",
+      "question": "What is idempotency and why is it important in event-driven systems?",
+      "relevant_chunks": [
+        13,
+        15
+      ],
+      "hybrid_candidates": [
+        13,
+        11,
+        12,
+        6,
+        19,
+        5,
+        14,
+        0,
+        20,
+        15
+      ],
+      "reranked_chunks": [
+        13,
+        11,
+        12,
+        19,
+        15
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 13,
+          "score": 7.549400329589844
+        },
+        {
+          "chunk_id": 11,
+          "score": 0.9748129844665527
+        },
+        {
+          "chunk_id": 12,
+          "score": -4.495914936065674
+        },
+        {
+          "chunk_id": 19,
+          "score": -4.730464935302734
+        },
+        {
+          "chunk_id": 15,
+          "score": -4.926015853881836
+        }
+      ],
+      "precision_at_5": 0.4,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.8503449055347546
+    },
+    {
+      "question_id": "Q14",
+      "question": "What is the difference between authentication and authorization?",
+      "relevant_chunks": [
+        14
+      ],
+      "hybrid_candidates": [
+        14,
+        15,
+        10,
+        9,
+        2,
+        5,
+        11,
+        8,
+        3,
+        7
+      ],
+      "reranked_chunks": [
+        14,
+        10,
+        9,
+        5,
+        15
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 14,
+          "score": 3.163133144378662
+        },
+        {
+          "chunk_id": 10,
+          "score": -8.715255737304688
+        },
+        {
+          "chunk_id": 9,
+          "score": -10.68263053894043
+        },
+        {
+          "chunk_id": 5,
+          "score": -10.78968620300293
+        },
+        {
+          "chunk_id": 15,
+          "score": -10.858942985534668
+        }
+      ],
+      "precision_at_5": 0.2,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question_id": "Q15",
+      "question": "What security practices are recommended for protecting application credentials?",
+      "relevant_chunks": [
+        14,
+        15
+      ],
+      "hybrid_candidates": [
+        14,
+        15,
+        22,
+        10,
+        9,
+        17,
+        1,
+        20,
+        19,
+        7
+      ],
+      "reranked_chunks": [
+        14,
+        22,
+        15,
+        20,
+        19
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 14,
+          "score": -3.270555019378662
+        },
+        {
+          "chunk_id": 22,
+          "score": -4.124399185180664
+        },
+        {
+          "chunk_id": 15,
+          "score": -5.64487361907959
+        },
+        {
+          "chunk_id": 20,
+          "score": -10.409610748291016
+        },
+        {
+          "chunk_id": 19,
+          "score": -10.874420166015625
+        }
+      ],
+      "precision_at_5": 0.4,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.9197207891481876
+    },
+    {
+      "question_id": "Q16",
+      "question": "What are the three main types of observability signals discussed in the document?",
+      "relevant_chunks": [
+        15,
+        16
+      ],
+      "hybrid_candidates": [
+        14,
+        15,
+        16,
+        0,
+        20,
+        1,
+        12,
+        21,
+        10,
+        11
+      ],
+      "reranked_chunks": [
+        15,
+        0,
+        14,
+        1,
+        16
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 15,
+          "score": -3.536668062210083
+        },
+        {
+          "chunk_id": 0,
+          "score": -5.2812347412109375
+        },
+        {
+          "chunk_id": 14,
+          "score": -5.68373966217041
+        },
+        {
+          "chunk_id": 1,
+          "score": -7.508583068847656
+        },
+        {
+          "chunk_id": 16,
+          "score": -8.796647071838379
+        }
+      ],
+      "precision_at_5": 0.4,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.8503449055347546
+    },
+    {
+      "question_id": "Q17",
+      "question": "Why does serverless computing not automatically guarantee low cost?",
+      "relevant_chunks": [
+        17,
+        18
+      ],
+      "hybrid_candidates": [
+        17,
+        18,
+        5,
+        23,
+        8,
+        2,
+        6,
+        7,
+        13,
+        0
+      ],
+      "reranked_chunks": [
+        17,
+        18,
+        5,
+        23,
+        7
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 17,
+          "score": 4.038956642150879
+        },
+        {
+          "chunk_id": 18,
+          "score": 1.2317628860473633
+        },
+        {
+          "chunk_id": 5,
+          "score": -1.384034276008606
+        },
+        {
+          "chunk_id": 23,
+          "score": -2.098259925842285
+        },
+        {
+          "chunk_id": 7,
+          "score": -2.2915799617767334
+        }
+      ],
+      "precision_at_5": 0.4,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question_id": "Q18",
+      "question": "What can happen when a rapidly scaling serverless function overwhelms a database?",
+      "relevant_chunks": [
+        18
+      ],
+      "hybrid_candidates": [
+        18,
+        7,
+        5,
+        6,
+        11,
+        2,
+        14,
+        23,
+        19,
+        8
+      ],
+      "reranked_chunks": [
+        18,
+        7,
+        23,
+        19,
+        5
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 18,
+          "score": 6.208702564239502
+        },
+        {
+          "chunk_id": 7,
+          "score": -0.3783860206604004
+        },
+        {
+          "chunk_id": 23,
+          "score": -0.9744120836257935
+        },
+        {
+          "chunk_id": 19,
+          "score": -2.7564330101013184
+        },
+        {
+          "chunk_id": 5,
+          "score": -3.125709056854248
+        }
+      ],
+      "precision_at_5": 0.2,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question_id": "Q19",
+      "question": "When might a virtual machine or container be preferred over a serverless function?",
+      "relevant_chunks": [
+        18,
+        19
+      ],
+      "hybrid_candidates": [
+        19,
+        4,
+        18,
+        23,
+        5,
+        2,
+        8,
+        3,
+        17,
+        22
+      ],
+      "reranked_chunks": [
+        19,
+        18,
+        4,
+        23,
+        5
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 19,
+          "score": 2.0011086463928223
+        },
+        {
+          "chunk_id": 18,
+          "score": 0.8230192065238953
+        },
+        {
+          "chunk_id": 4,
+          "score": -0.09670448303222656
+        },
+        {
+          "chunk_id": 23,
+          "score": -1.41575288772583
+        },
+        {
+          "chunk_id": 5,
+          "score": -2.443601131439209
+        }
+      ],
+      "precision_at_5": 0.4,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question_id": "Q20",
+      "question": "What architecture is proposed for the academic document-management application?",
+      "relevant_chunks": [
+        21,
+        22,
+        23
+      ],
+      "hybrid_candidates": [
+        0,
+        21,
+        1,
+        10,
+        9,
+        14,
+        7,
+        3,
+        12,
+        2
+      ],
+      "reranked_chunks": [
+        21,
+        0,
+        1,
+        14,
+        7
+      ],
+      "reranker_scores": [
+        {
+          "chunk_id": 21,
+          "score": 4.689560890197754
+        },
+        {
+          "chunk_id": 0,
+          "score": 1.4063968658447266
+        },
+        {
+          "chunk_id": 1,
+          "score": -4.681056976318359
+        },
+        {
+          "chunk_id": 14,
+          "score": -9.399833679199219
+        },
+        {
+          "chunk_id": 7,
+          "score": -9.882111549377441
+        }
+      ],
+      "precision_at_5": 0.2,
+      "recall_at_5": 0.3333333333333333,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.46927872602275644
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "question_id": "Q01",
+    "question": "What is elasticity in cloud computing?",
+    "relevant_chunks": [2]
+  },
+  {
+    "question_id": "Q02",
+    "question": "What are the three main cloud service models described in the document?",
+    "relevant_chunks": [2, 3]
+  },
+  {
+    "question_id": "Q03",
+    "question": "How do containers differ from virtual machines?",
+    "relevant_chunks": [3, 4]
+  },
+  {
+    "question_id": "Q04",
+    "question": "What is Function-as-a-Service (FaaS)?",
+    "relevant_chunks": [5]
+  },
+  {
+    "question_id": "Q05",
+    "question": "Why is persistent application state usually stored outside a serverless function?",
+    "relevant_chunks": [5, 6]
+  },
+  {
+    "question_id": "Q06",
+    "question": "What is a cold start in serverless computing?",
+    "relevant_chunks": [6]
+  },
+  {
+    "question_id": "Q07",
+    "question": "What happens when a user submits a form in the described serverless contact application?",
+    "relevant_chunks": [8, 9]
+  },
+  {
+    "question_id": "Q08",
+    "question": "Why is object storage suitable for hosting static frontend assets?",
+    "relevant_chunks": [9]
+  },
+  {
+    "question_id": "Q09",
+    "question": "What functions can an API gateway perform in the described architecture?",
+    "relevant_chunks": [9, 10]
+  },
+  {
+    "question_id": "Q10",
+    "question": "When might a relational database be preferred over a NoSQL database?",
+    "relevant_chunks": [10]
+  },
+  {
+    "question_id": "Q11",
+    "question": "How does a message queue help separate producers and consumers?",
+    "relevant_chunks": [11, 12]
+  },
+  {
+    "question_id": "Q12",
+    "question": "How can an object upload trigger document processing?",
+    "relevant_chunks": [12]
+  },
+  {
+    "question_id": "Q13",
+    "question": "What is idempotency and why is it important in event-driven systems?",
+    "relevant_chunks": [13, 15]
+  },
+  {
+    "question_id": "Q14",
+    "question": "What is the difference between authentication and authorization?",
+    "relevant_chunks": [14]
+  },
+  {
+    "question_id": "Q15",
+    "question": "What security practices are recommended for protecting application credentials?",
+    "relevant_chunks": [14, 15]
+  },
+  {
+    "question_id": "Q16",
+    "question": "What are the three main types of observability signals discussed in the document?",
+    "relevant_chunks": [15, 16]
+  },
+  {
+    "question_id": "Q17",
+    "question": "Why does serverless computing not automatically guarantee low cost?",
+    "relevant_chunks": [17, 18]
+  },
+  {
+    "question_id": "Q18",
+    "question": "What can happen when a rapidly scaling serverless function overwhelms a database?",
+    "relevant_chunks": [18]
+  },
+  {
+    "question_id": "Q19",
+    "question": "When might a virtual machine or container be preferred over a serverless function?",
+    "relevant_chunks": [18, 19]
+  },
+  {
+    "question_id": "Q20",
+    "question": "What architecture is proposed for the academic document-management application?",
+    "relevant_chunks": [21, 22, 23]
+  }
+]

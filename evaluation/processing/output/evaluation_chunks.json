@@ -1,0 +1,152 @@
+[
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 1,
+    "chunk_id": 0,
+    "chunk_text": "Cloud Computing and Serverless Architecture • Page 1\nCloud Computing and Serverless Architecture\nEvaluation Dataset Document for Retrieval-Augmented Question Answering\nPurpose\nThis document is a self-contained academic-style knowledge source designed for testing document retrieval and\nRetrieval-Augmented Generation (RAG) systems. It contains related concepts, definitions, implementation\ndetails, comparisons, examples, trade-offs, and conclusions distributed across multiple sections so that retrieval\nmethods can be evaluated on both exact terminology and semantic meaning.\nDocument scope\nThe document focuses on cloud computing, virtualization, containers, serverless computing,\nFunction-as-a-Service (FaaS), managed databases, object storage, API gateways, event-driven systems,\nobservability, security, cost management, scalability, and deployment patterns.\nSuggested use in the Academic RAG QA System\nUpload this PDF as a second evaluation document after the internship report. Build its chun"
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 1,
+    "chunk_id": 1,
+    "chunk_text": "security, cost management, scalability, and deployment patterns.\nSuggested use in the Academic RAG QA System\nUpload this PDF as a second evaluation document after the internship report. Build its chunks and FAISS index,\nthen ask questions whose answers are distributed across different sections. The same questions can later be\nevaluated using Dense retrieval, BM25, Hybrid retrieval, and Hybrid plus Cross-Encoder reranking.\nEvaluation note: The document deliberately contains terminology that sometimes appears in several sections. This allows\nexperiments to distinguish exact keyword matching from semantic retrieval and second-stage relevance ranking."
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 2,
+    "chunk_id": 2,
+    "chunk_text": "Cloud Computing and Serverless Architecture • Page 2\n1. Foundations of Cloud Computing\nCloud computing is a model for delivering computing resources over a network on demand. Instead of\npurchasing and maintaining all physical infrastructure locally, an organization can obtain compute, storage,\nnetworking, databases, and other services from a cloud provider. A major characteristic of cloud computing is\nresource pooling: physical infrastructure is shared among many customers while logical isolation is maintained.\nElasticity describes the ability to increase or decrease resources as workload changes. Scalability is related but\nis often used more broadly to describe the capacity of a system to handle additional users, requests, or data.\nVertical scaling increases the capacity of an existing resource, while horizontal scaling adds more instances or\nservice replicas.\n1.1 Service Models\nInfrastructure as a Service (IaaS) provides virtual machines, networks, and storage. The customer generally"
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 2,
+    "chunk_id": 3,
+    "chunk_text": "source, while horizontal scaling adds more instances or\nservice replicas.\n1.1 Service Models\nInfrastructure as a Service (IaaS) provides virtual machines, networks, and storage. The customer generally\nmanages the operating system and application stack. Platform as a Service (PaaS) abstracts much of the\ninfrastructure and provides a managed application platform. Software as a Service (SaaS) delivers a complete\napplication to end users.\n1.2 Deployment Models\nA public cloud provides resources through a cloud provider's shared infrastructure. A private cloud is dedicated\nto one organization. A hybrid cloud combines private and public environments and may be used when workloads\nor data have different placement requirements.\n1.3 Virtualization and Containers\nVirtualization uses a hypervisor to create virtual machines that behave like independent computers. Each virtual\nmachine can run its own operating system. Containers provide a lighter form of isolation by sharing the host\noperating-syste"
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 2,
+    "chunk_id": 4,
+    "chunk_text": "reate virtual machines that behave like independent computers. Each virtual\nmachine can run its own operating system. Containers provide a lighter form of isolation by sharing the host\noperating-system kernel while packaging an application with its dependencies. Containers generally start faster\nand use fewer resources than full virtual machines, although they provide a different isolation boundary.\nFor distributed applications, containers can simplify packaging and deployment. However, operating a container\nplatform still requires decisions about scheduling, networking, scaling, health checks, and updates."
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 3,
+    "chunk_id": 5,
+    "chunk_text": "Cloud Computing and Serverless Architecture • Page 3\n2. Serverless Computing and Function-as-a-Service\nServerless computing is a cloud execution model in which the provider manages the underlying servers and\nmuch of the operational infrastructure. The term does not mean that servers do not exist; rather, application\ndevelopers normally do not manage those servers directly. A common serverless model is\nFunction-as-a-Service (FaaS), where application logic is divided into functions that execute in response to\nevents or requests.\n2.1 Function Execution\nA serverless function commonly receives an event, performs a bounded unit of work, and returns a result or\nproduces a side effect. Events may come from an HTTP request, a message queue, an object upload, a\nscheduled rule, or a database change. Function execution is generally stateless from the perspective of an\nindividual invocation, so durable application state is usually stored in external services such as databases or\nobject storage.\n2.2"
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 3,
+    "chunk_id": 6,
+    "chunk_text": "Function execution is generally stateless from the perspective of an\nindividual invocation, so durable application state is usually stored in external services such as databases or\nobject storage.\n2.2 Cold Starts and Warm Invocations\nA cold start occurs when the provider must initialize an execution environment before invoking a function.\nInitialization can include loading the runtime, dependencies, and application code. A warm invocation reuses an\nalready prepared environment and can therefore have lower startup latency. Cold-start behavior depends on\nruntime, package size, initialization work, traffic patterns, and provider implementation.\n2.3 Stateless Design\nStateless design is important in serverless systems because individual invocations should not depend on local\nmemory remaining available for a future request. A contact form, for example, can send an HTTP request to an\nAPI gateway, invoke a function, validate the input, and store the submission in a managed database. The\ndataba"
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 3,
+    "chunk_id": 7,
+    "chunk_text": "ailable for a future request. A contact form, for example, can send an HTTP request to an\nAPI gateway, invoke a function, validate the input, and store the submission in a managed database. The\ndatabase provides persistence independently of the function execution environment.\n2.4 Benefits and Limitations\nServerless architectures can reduce infrastructure management, support automatic scaling, and allow teams to\npay according to service usage. They can be useful for event-driven workloads, APIs, scheduled jobs, and\nlightweight data-processing tasks. Limitations include cold-start latency, execution-duration limits,\nplatform-specific behavior, distributed debugging, and the need to understand service-specific pricing."
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 4,
+    "chunk_id": 8,
+    "chunk_text": "Cloud Computing and Serverless Architecture • Page 4\n3. Architecture of a Serverless Web Application\nA typical serverless web application separates the user interface, request routing, business logic, and persistent\nstorage. A browser may download static HTML, CSS, and JavaScript from object storage or a content delivery\nnetwork. API requests can then pass through an API gateway to serverless functions, which communicate with\nmanaged data services.\n3.1 Request Flow\nConsider a serverless contact application. The browser displays a form containing a name, email address, and\nmessage. When the user submits the form, the frontend sends an HTTPS request to an API endpoint. The API\ngateway validates basic request routing and invokes a backend function. The function validates the payload,\nadds metadata such as a timestamp, and writes the record to a managed database.\nA successful response travels back through the API gateway to the browser. If validation fails, the function can\nreturn a client"
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 4,
+    "chunk_id": 9,
+    "chunk_text": "adata such as a timestamp, and writes the record to a managed database.\nA successful response travels back through the API gateway to the browser. If validation fails, the function can\nreturn a client error. If a downstream service fails, the application should return a controlled error response and\nrecord diagnostic information for operators.\n3.2 Static Frontend and Object Storage\nObject storage is well suited to static assets because files such as HTML, CSS, JavaScript, images, and\ndocuments can be stored independently of application servers. A static frontend can therefore be deployed\nwithout maintaining a traditional web server for each application.\n3.3 API Gateway\nAn API gateway provides an entry point for client requests. It can route HTTP methods to backend functions and\ncan support authentication, throttling, request transformation, monitoring, and other API-management\ncapabilities. Separating the API layer from the function implementation also allows the backend to evolve with"
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 4,
+    "chunk_id": 10,
+    "chunk_text": "authentication, throttling, request transformation, monitoring, and other API-management\ncapabilities. Separating the API layer from the function implementation also allows the backend to evolve without\nrequiring the frontend to know its internal execution model.\n3.4 Managed Databases\nA serverless application can use either relational or NoSQL databases depending on its data model. Relational\ndatabases are useful when structured records and relationships require SQL transactions. NoSQL databases\ncan be useful for key-value or document-oriented access patterns and large-scale request workloads. The\ncorrect choice depends on access patterns, consistency requirements, transaction needs, and operational\nconstraints."
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 5,
+    "chunk_id": 11,
+    "chunk_text": "Cloud Computing and Serverless Architecture • Page 5\n4. Event-Driven Systems and Data Processing\nEvent-driven architecture organizes application behavior around events. An event represents a fact that\nsomething happened, such as a file being uploaded, a payment being completed, a record being created, or a\nmessage entering a queue. Producers generate events and consumers react to them. This model can reduce\ndirect coupling between components.\n4.1 Queues and Asynchronous Processing\nA message queue can temporarily hold work between a producer and a consumer. This separation is useful\nwhen processing speed differs between the two components. For example, a web application can place an\nimage-processing task into a queue and immediately return a response to the user. A worker or serverless\nfunction can process the task asynchronously.\nQueues can also improve resilience. If a consumer becomes temporarily unavailable, messages can remain in\nthe queue until processing resumes, subject to reten"
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 5,
+    "chunk_id": 12,
+    "chunk_text": "tion can process the task asynchronously.\nQueues can also improve resilience. If a consumer becomes temporarily unavailable, messages can remain in\nthe queue until processing resumes, subject to retention and failure policies. Dead-letter queues can isolate\nmessages that repeatedly fail so that they can be investigated without blocking other work.\n4.2 Object-Triggered Processing\nObject storage can act as an event source. When a new PDF, image, or data file is uploaded, an event can\ninvoke a processing function. The function may extract metadata, validate the file, transform the content, and\nstore the result in another service. This pattern is useful for document processing pipelines because storage and\ncompute remain loosely coupled.\n4.3 Scheduled Workloads\nNot all event-driven tasks originate from users. A scheduler can invoke a function at regular intervals for tasks\nsuch as generating reports, cleaning temporary records, checking system conditions, or refreshing cached\ninformation."
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 5,
+    "chunk_id": 13,
+    "chunk_text": "nate from users. A scheduler can invoke a function at regular intervals for tasks\nsuch as generating reports, cleaning temporary records, checking system conditions, or refreshing cached\ninformation. Scheduled functions should be designed to tolerate retries because distributed systems can deliver\nan event more than once.\n4.4 Idempotency\nIdempotency means that processing the same request or event multiple times does not produce an incorrect\ncumulative effect. It is especially important in event-driven systems because retries can occur after timeouts or\ntransient failures. A common approach is to assign a unique event identifier and record which events have\nalready been processed."
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 6,
+    "chunk_id": 14,
+    "chunk_text": "Cloud Computing and Serverless Architecture • Page 6\n5. Security, Reliability, and Observability\nCloud applications should apply security controls at multiple layers rather than relying on a single protection\nmechanism. Identity and access management determines which users, services, and functions are allowed to\nperform particular actions. The principle of least privilege means granting only the permissions required for a\ntask.\n5.1 Authentication and Authorization\nAuthentication verifies who or what is making a request, while authorization determines what that identity is\nallowed to do. API endpoints can use tokens, managed identity mechanisms, or other authentication systems.\nAuthorization policies should restrict access to only the required resources and operations.\n5.2 Data Protection\nData should be protected both in transit and at rest. HTTPS protects network communication between clients\nand APIs. Managed storage and databases commonly provide encryption capabilities for stored da"
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 6,
+    "chunk_id": 15,
+    "chunk_text": "ata should be protected both in transit and at rest. HTTPS protects network communication between clients\nand APIs. Managed storage and databases commonly provide encryption capabilities for stored data. Secrets\nsuch as API keys and database credentials should not be embedded in frontend source code or committed to\npublic repositories.\n5.3 Reliability\nReliable systems anticipate failures rather than assuming every dependency is always available. Timeouts,\nretries with appropriate backoff, validation, controlled error handling, and durable queues can reduce the impact\nof transient failures. Retries must be designed carefully because blindly repeating a non-idempotent operation\ncan create duplicate effects.\n5.4 Observability\nObservability combines logs, metrics, and traces to help engineers understand system behavior. Logs record\nevents and diagnostic information. Metrics provide numerical measurements such as request count, latency,\nerror rate, and function duration. Traces help connect"
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 6,
+    "chunk_id": 16,
+    "chunk_text": "understand system behavior. Logs record\nevents and diagnostic information. Metrics provide numerical measurements such as request count, latency,\nerror rate, and function duration. Traces help connect activity across multiple services. Together, these signals\ncan help identify slow functions, failing APIs, and unexpected workload patterns.\nFor a serverless application, useful operational measurements include invocation count, duration, cold-start\nfrequency when available, error count, throttling, database latency, queue depth, and API response latency."
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 7,
+    "chunk_id": 17,
+    "chunk_text": "Cloud Computing and Serverless Architecture • Page 7\n6. Cost, Scalability, and Architectural Trade-offs\nCloud architecture decisions should consider performance, reliability, security, operational effort, and cost\ntogether. A design that minimizes infrastructure management may have different cost behavior from a design\nbased on continuously running virtual machines.\n6.1 Serverless Cost Model\nServerless services commonly charge according to dimensions such as request count, execution duration,\nmemory allocation, data transfer, storage, or related service usage. This can make serverless attractive for\nworkloads with variable traffic because resources are not necessarily running continuously at a fixed capacity.\nHowever, serverless does not automatically mean inexpensive. High-volume workloads, inefficient functions,\nexcessive logging, large data transfers, or expensive downstream services can increase cost. Cost analysis\nshould therefore examine the complete request path rather than focu"
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 7,
+    "chunk_id": 18,
+    "chunk_text": "s, inefficient functions,\nexcessive logging, large data transfers, or expensive downstream services can increase cost. Cost analysis\nshould therefore examine the complete request path rather than focusing only on the function price.\n6.2 Scalability\nServerless platforms can automatically create additional execution environments as demand grows, subject to\nconcurrency limits and service quotas. Horizontal scaling is therefore often built into the execution model.\nDownstream systems must still be capable of handling the increased load. A rapidly scaling function can\noverwhelm a database if connection management and capacity planning are ignored.\n6.3 Serverless versus Virtual Machines\nVirtual machines provide greater control over the operating system, installed software, networking, and\nlong-running processes. They can be appropriate when an application requires persistent processes, custom\noperating-system configuration, specialized software, or predictable long-running workloads.\nServerl"
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 7,
+    "chunk_id": 19,
+    "chunk_text": "unning processes. They can be appropriate when an application requires persistent processes, custom\noperating-system configuration, specialized software, or predictable long-running workloads.\nServerless functions reduce infrastructure administration and are particularly convenient for short-lived\nevent-driven tasks. The trade-off is less control over the execution environment and potential platform-specific\nconstraints.\n6.4 Serverless versus Containers\nContainers provide application portability and consistent packaging while retaining more control over the runtime\nthan many serverless function platforms. Container orchestration, however, introduces operational concepts\nsuch as clusters, scheduling, service discovery, and deployment management. Serverless functions can remove\nmuch of this infrastructure responsibility when the application fits the function execution model."
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 7,
+    "chunk_id": 20,
+    "chunk_text": "infrastructure responsibility when the application fits the function execution model."
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 8,
+    "chunk_id": 21,
+    "chunk_text": "Cloud Computing and Serverless Architecture • Page 8\n7. Design Example and Conclusion\nA small academic document-management application can combine the concepts described in this document. A\nuser uploads a PDF to object storage. The upload event invokes a processing function, which validates the file\nand extracts metadata. The extracted content can be stored for later retrieval. A web frontend communicates\nwith an API gateway when the user asks a question. A backend function retrieves relevant passages and\ngenerates a response using an AI service.\nThe architecture can be represented as: Browser → Static Object Storage → API Gateway → Serverless\nFunction → Managed Database or Search Service. For asynchronous document processing, the upload event\ncan be routed through a queue before the processing function. Monitoring services collect logs and metrics from\nthe API, functions, and data layer.\n7.1 Key Design Decisions\nThe frontend should remain independent of backend implementation details."
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 8,
+    "chunk_id": 22,
+    "chunk_text": "ssing function. Monitoring services collect logs and metrics from\nthe API, functions, and data layer.\n7.1 Key Design Decisions\nThe frontend should remain independent of backend implementation details. The API should validate requests\nand return consistent response formats. Functions should remain focused on individual tasks rather than\nbecoming a single large application. Persistent state should be stored in durable services. Sensitive credentials\nshould be protected using an appropriate secret-management mechanism. Monitoring should be included from\nthe beginning rather than added only after failures occur.\n7.2 Practical Decision Guide\nRequirement\nPotential approach\nReason\nStatic website\nObject storage / CDN\nSimple delivery of static assets\nHTTP API\nAPI gateway + function\nManaged request routing and execution\nShort event task\nServerless function\nAutomatic execution and scaling\nLong-running process\nVM or container\nBetter control over persistent execution\nAsynchronous workload\nQueue + w"
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 8,
+    "chunk_id": 23,
+    "chunk_text": "routing and execution\nShort event task\nServerless function\nAutomatic execution and scaling\nLong-running process\nVM or container\nBetter control over persistent execution\nAsynchronous workload\nQueue + worker/function\nDecouples producer and consumer\nStructured relational data\nManaged SQL database\nTransactions and relational queries\nKey-value/document access\nManaged NoSQL database\nFlexible high-scale access patterns\nOperational diagnosis\nLogs + metrics + traces\nVisibility across distributed services\nConclusion\nCloud computing provides flexible access to infrastructure and managed services, while serverless computing\nfurther abstracts infrastructure management for event-driven and short-lived workloads. Effective designs\nbalance scalability, reliability, security, observability, performance, and cost. The appropriate architecture\ndepends on workload characteristics and operational requirements rather than on a single universally correct\nmodel."
+  },
+  {
+    "document_name": "cloud_serverless.pdf",
+    "page_number": 8,
+    "chunk_id": 24,
+    "chunk_text": "d cost. The appropriate architecture\ndepends on workload characteristics and operational requirements rather than on a single universally correct\nmodel."
+  }
+]

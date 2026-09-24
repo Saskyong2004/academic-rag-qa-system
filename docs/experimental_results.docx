@@ -1,0 +1,21 @@
+Experimental Results
+
+Dataset: Cloud Computing and Serverless Architecture
+Pages: 8
+Chunks: 25
+Questions: 20
+Evaluation cutoff: Top-5 retrieval
+Embedding model: all-MiniLM-L6-v2
+RRF constant: 60
+Cross-Encoder: cross-encoder/ms-marco-MiniLM-L-6-v2
+
+Method	Precision@5	Recall@5	MRR	NDCG@5
+Dense Retrieval	0.3000	0.9417	0.9750	0.9167
+BM25	0.2500	0.8167	0.7375	0.7058
+Hybrid + RRF	0.2800	0.8917	0.9250	0.8610
+Hybrid + Cross-Encoder	0.2900	0.9167	0.9625	0.8983
+
+Observation
+Dense Retrieval achieved the highest scores across all four evaluated retrieval metrics on the selected dataset. 
+Hybrid Retrieval improved over BM25, while Cross-Encoder reranking further improved the Hybrid approach. However,
+neither Hybrid nor reranking exceeded Dense Retrieval on this evaluation set.
